@@ -1,11 +1,9 @@
-import 'dart:html';
-
 class Job {
   final String company;
   final String title;
   final String logoUrl;
   bool isNew = true;
-  bool isFulltime = false;
+  bool isFulltime = true;
   String? time;
   final String location;
 
@@ -41,7 +39,7 @@ List<Job> jobs = [
   Job(
       title: 'UX Engineer',
       company: 'Amazon',
-      logoUrl: 'assets/Amazon.png',
+      logoUrl: 'assets/Amazon.jpg',
       location: 'Bangaluru, Karnataka'),
   Job(
       title: 'User Interface Designer',
@@ -51,7 +49,7 @@ List<Job> jobs = [
   Job(
       title: 'Systems Architect',
       company: 'Tesla',
-      logoUrl: 'assets/Tesla-Logo.png',
+      logoUrl: 'assets/Tesla-logo.png',
       location: 'Noida, Uttar Pradesh'),
   Job(
       title: 'Data Analyst',
@@ -63,10 +61,9 @@ List<Job> jobs = [
       company: 'Meta',
       logoUrl: 'assets/Meta.png',
       location: 'Noida, Uttar Pradesh'),
-
   Job(
       title: 'Mobile Applications Engineer',
       company: 'Air BnB',
       logoUrl: 'assets/Airbnb.png',
-      location: 'Noida, Uttar Pradesh'),    
+      location: 'Noida, Uttar Pradesh'),
 ];

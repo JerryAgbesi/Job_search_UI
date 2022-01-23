@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:job_search_ui/components/components.dart';
+import 'package:job_search_ui/models/jobs.dart';
 
 class JobsScreen extends StatelessWidget {
   const JobsScreen({Key? key}) : super(key: key);
@@ -49,6 +51,7 @@ class JobsScreen extends StatelessWidget {
               ),
             ),
           ),
+          LatestJobsListview(cards: jobs)
         ],
       ),
     );
