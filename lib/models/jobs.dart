@@ -34,9 +34,9 @@ List<Job> jobs = [
       logoUrl: 'assets/google.png',
       location: 'Accra,Ghana'),
   Job(
-      title: 'UX Designer',
-      company: 'Microsoft',
-      logoUrl: 'assets/microsoft.png',
+      title: 'Product Designer',
+      company: 'Twitter',
+      logoUrl: 'assets/Twitter.png',
       location: 'Noida, Uttar Pradesh'),
   Job(
       title: 'UX Engineer',
