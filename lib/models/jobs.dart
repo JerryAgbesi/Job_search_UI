@@ -4,7 +4,7 @@ class Job {
   final String logoUrl;
   bool isNew = true;
   bool isFulltime = true;
-  String? time;
+  final String? time;
   final String location;
 
   Job({
@@ -12,6 +12,7 @@ class Job {
     required this.company,
     required this.logoUrl,
     required this.location,
+    this.time,
   });
 }
 
@@ -37,33 +38,46 @@ List<Job> jobs = [
       logoUrl: 'assets/Twitter.png',
       location: 'Noida, Uttar Pradesh'),
   Job(
+    title: 'Systems Architect',
+    company: 'Tesla',
+    logoUrl: 'assets/Tesla-logo.png',
+    location: 'Noida, Uttar Pradesh',
+  ),
+];
+
+List<Job> recommended = [
+  Job(
+    title: 'User Interface Designer',
+    company: 'Apple Inc',
+    logoUrl: 'assets/Apple.png',
+    location: 'Noida, Uttar Pradesh',
+    time: '2 hours ago',
+  ),
+  Job(
       title: 'UX Engineer',
       company: 'Amazon',
       logoUrl: 'assets/Amazon.jpg',
-      location: 'Bangaluru, Karnataka'),
+      location: 'Bangaluru, Karnataka',
+      time: '8 hours ago'),
   Job(
-      title: 'User Interface Designer',
-      company: 'Apple Inc',
-      logoUrl: 'assets/Apple.png',
-      location: 'Noida, Uttar Pradesh'),
+    title: 'Data Analyst',
+    company: 'Ebay',
+    logoUrl: 'assets/Ebay.png',
+    location: 'Noida, Uttar Pradesh',
+    time: '2 days ago',
+  ),
   Job(
-      title: 'Systems Architect',
-      company: 'Tesla',
-      logoUrl: 'assets/Tesla-logo.png',
-      location: 'Noida, Uttar Pradesh'),
+    title: 'Software Engineer',
+    company: 'Meta',
+    logoUrl: 'assets/Meta.png',
+    location: 'Noida, Uttar Pradesh',
+    time: '4 hours ago',
+  ),
   Job(
-      title: 'Data Analyst',
-      company: 'Ebay',
-      logoUrl: 'assets/Ebay.png',
-      location: 'Noida, Uttar Pradesh'),
-  Job(
-      title: 'Software Engineer',
-      company: 'Meta',
-      logoUrl: 'assets/Meta.png',
-      location: 'Noida, Uttar Pradesh'),
-  Job(
-      title: 'Mobile Applications Engineer',
-      company: 'Air BnB',
-      logoUrl: 'assets/Airbnb.png',
-      location: 'Noida, Uttar Pradesh'),
+    title: 'Mobile Applications Engineer',
+    company: 'Air BnB',
+    logoUrl: 'assets/airbnb-L.jpg',
+    location: 'Noida, Uttar Pradesh',
+    time: '11 hours ago',
+  ),
 ];

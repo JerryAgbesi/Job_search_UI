@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'latest_jobs_card.dart';
 import 'package:job_search_ui/models/jobs.dart';
+import 'package:job_search_ui/constants.dart';
 
 class LatestJobsListview extends StatelessWidget {
   LatestJobsListview({Key? key, required this.cards}) : super(key: key);
@@ -15,12 +16,15 @@ class LatestJobsListview extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text('Latest Jobs'),
+            const Text(
+              'Latest Jobs',
+              style: recommendedtitle,
+            ),
             const SizedBox(
-              height: 8,
+              height: 16,
             ),
             Container(
-              height: 250,
+              height: 230,
               child: ListView.separated(
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, int index) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:job_search_ui/constants.dart';
 
 class LatestJobsCard extends StatelessWidget {
   const LatestJobsCard({
@@ -20,44 +21,73 @@ class LatestJobsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 16,
+        vertical: 8,
+      ),
       constraints: const BoxConstraints.expand(
-        height: 400,
-        width: 250,
+        height: 250,
+        width: 230,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Container(height: 70, width: 70, child: Image.asset(logo)),
-                Container(
-                    color: const Color(0xFFCDEEF8),
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Text('NEW'),
-                    ))
-              ],
-            ),
-          ),
-          Text(title),
-          Text(company),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Icon(FontAwesomeIcons.mapPin),
-              Text(location),
+              Container(height: 80, width: 80, child: Image.asset(logo)),
+              Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: const Color(0xFFCDEEF8),
+                  ),
+                  child: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      'NEW',
+                      style: blueText.copyWith(fontWeight: FontWeight.w800),
+                    ),
+                  ))
             ],
           ),
-          Expanded(
-            child: Row(
-              children: [
-                const Icon(FontAwesomeIcons.shoppingBag),
-                Text(isFulltime ? 'Full-Time' : 'Part-Time'),
-              ],
+          Text(
+            title,
+            style: recommendedtitle.copyWith(
+              fontSize: 18,
             ),
-          )
+          ),
+          Text(
+            company,
+            style: TextStyle(color: Colors.grey, fontSize: 15.0),
+          ),
+          const SizedBox(height: 16.0),
+          Row(
+            children: [
+              const Icon(
+                Icons.location_on,
+                color: Color(0xFFAEAEAE),
+              ),
+              const SizedBox(width: 8.0),
+              Text(location,
+                  style: TextStyle(
+                      fontWeight: FontWeight.w500, color: Colors.grey[600])),
+            ],
+          ),
+          const SizedBox(height: 16.0),
+          Row(
+            children: [
+              const Icon(
+                Icons.shopping_bag_rounded,
+                color: Color(0xFFAEAEAE),
+              ),
+              const SizedBox(width: 8.0),
+              Text(
+                isFulltime ? 'Full-Time' : 'Part-Time',
+                style: TextStyle(
+                    fontWeight: FontWeight.w500, color: Colors.grey[600]),
+              ),
+            ],
+          ),
         ],
       ),
       decoration: BoxDecoration(

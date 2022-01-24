@@ -10,10 +10,13 @@ class JobsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(30.0),
+      padding: const EdgeInsets.all(20.0),
       child: ListView(
         scrollDirection: Axis.vertical,
         children: [
+          const SizedBox(
+            height: 16.0,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -21,23 +24,26 @@ class JobsScreen extends StatelessWidget {
                 'Hey Urvashi,',
                 style: GoogleFonts.poppins(
                   textStyle:
-                      TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                      TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                 ),
               ),
               const Icon(
-                FontAwesomeIcons.bell,
-                size: 30,
+                Icons.notifications_none_rounded,
+                size: 40,
               )
             ],
           ),
           Text(
             'Let\'s find your dream job ',
             style: GoogleFonts.poppins(
-              textStyle: TextStyle(color: Colors.grey, fontSize: 15),
+              textStyle: const TextStyle(
+                  color: Colors.grey,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w500),
             ),
           ),
           const SizedBox(
-            height: 12,
+            height: 16,
           ),
           TextField(
             decoration: InputDecoration(
@@ -51,7 +57,9 @@ class JobsScreen extends StatelessWidget {
               ),
             ),
           ),
-          LatestJobsListview(cards: jobs)
+          const SizedBox(height: 20.0),
+          LatestJobsListview(cards: jobs),
+          RecommendedJobListView(recJobs: recommended)
         ],
       ),
     );
