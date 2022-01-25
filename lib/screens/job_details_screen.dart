@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_search_ui/components/components.dart';
 import 'package:job_search_ui/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -23,12 +24,22 @@ class JobDetailsPage extends StatelessWidget {
                     Icons.arrow_back,
                     size: 40,
                   ),
-                  Container(
-                      alignment: Alignment.center,
-                      padding: const EdgeInsets.only(right: 8.0),
-                      height: 100,
-                      width: 100,
-                      child: Image.asset('assets/google.png')),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                          alignment: Alignment.center,
+                          padding: const EdgeInsets.only(right: 8.0),
+                          height: 100,
+                          width: 100,
+                          child: Image.asset('assets/google.png')),
+                      const Icon(
+                        FontAwesomeIcons.bookmark,
+                        color: Color(0xFF818587),
+                        size: 40,
+                      ),
+                    ],
+                  ),
                   const Text('UX Researcher'),
                   Row(
                     children: [
@@ -93,7 +104,10 @@ class JobDetailsPage extends StatelessWidget {
                               color: Colors.grey[600])),
                     ],
                   ),
-                  const Text('Job Requirements'),
+                  const Text(
+                    'Job Requirements',
+                    style: recommendedtitle,
+                  ),
                   Row(
                     children: [
                       const Icon(
@@ -154,17 +168,13 @@ class JobDetailsPage extends StatelessWidget {
                 ],
               )),
               Container(
-                color: Colors.white,
+                decoration: const BoxDecoration(
+                    // color: Colors.green,
+                    ),
                 alignment: Alignment.bottomCenter,
                 height: 100,
-                child: MaterialButton(
-                  color: const Color(0xFF209FA6),
-                  onPressed: () {},
-                  child: const Padding(
-                    padding: EdgeInsets.all(16.0),
-                    child: Text('Apply now'),
-                  ),
-                ),
+                width: double.infinity,
+                child: ApplyButton()
               ),
             ],
           ),
