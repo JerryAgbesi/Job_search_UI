@@ -28,10 +28,11 @@ List<Job> jobs = [
       logoUrl: 'assets/google.png',
       location: 'Bangaluru, Karnataka'),
   Job(
-      title: 'UX Researcher',
-      company: 'Google',
-      logoUrl: 'assets/google.png',
-      location: 'Accra,Ghana'),
+    title: 'Data Analyst',
+    company: 'Ebay',
+    logoUrl: 'assets/Ebay.png',
+    location: 'Noida, Uttar Pradesh',
+  ),
   Job(
       title: 'Product Designer',
       company: 'Twitter',
@@ -60,12 +61,11 @@ List<Job> recommended = [
       location: 'Bangaluru, Karnataka',
       time: '8 hours ago'),
   Job(
-    title: 'Data Analyst',
-    company: 'Ebay',
-    logoUrl: 'assets/Ebay.png',
-    location: 'Noida, Uttar Pradesh',
-    time: '2 days ago',
-  ),
+      title: 'UX Researcher',
+      company: 'Google',
+      logoUrl: 'assets/google.png',
+      location: 'Accra,Ghana',
+      time: '2 days ago'),
   Job(
     title: 'Software Engineer',
     company: 'Meta',
