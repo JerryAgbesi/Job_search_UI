@@ -26,7 +26,7 @@ class RecommendedJobsCard extends StatelessWidget {
     return GestureDetector(
       onTap: () =>
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-        return JobDetailsPage();
+        return JobDetailsPage(title: title, company: company, logoUrl: logo, location: location);
       })),
       child: Container(
         constraints: const BoxConstraints.expand(

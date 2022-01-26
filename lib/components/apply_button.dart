@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:job_search_ui/constants.dart';
 
 class ApplyButton extends StatelessWidget {
   const ApplyButton({Key? key}) : super(key: key);
@@ -11,7 +12,10 @@ class ApplyButton extends StatelessWidget {
         color: const Color(0xFF57B8BF),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: const Text('Apply now'),
+      child: Text('Apply now',
+          style: recommendedtitle.copyWith(
+            color: Colors.white,
+          )),
     );
   }
 }
