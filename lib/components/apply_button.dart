@@ -9,7 +9,7 @@ class ApplyButton extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 100.0, vertical: 20),
       decoration: BoxDecoration(
-        color: const Color(0xFF57B8BF),
+        color: const Color(0xFF209FA6),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text('Apply now',

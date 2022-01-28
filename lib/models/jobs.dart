@@ -64,7 +64,7 @@ List<Job> recommended = [
       title: 'UX Researcher',
       company: 'Google',
       logoUrl: 'assets/google.png',
-      location: 'Accra,Ghana',
+      location: 'Bangaluru,Karnataka',
       time: '2 days ago'),
   Job(
     title: 'Software Engineer',

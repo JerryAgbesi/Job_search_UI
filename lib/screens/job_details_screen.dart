@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:job_search_ui/components/components.dart';
 import 'package:job_search_ui/constants.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:google_fonts/google_fonts.dart';
+import 'package:line_icons/line_icons.dart';
 
 class JobDetailsPage extends StatelessWidget {
   JobDetailsPage({
@@ -26,7 +27,6 @@ class JobDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     Random random = Random();
     return SafeArea(
       child: Scaffold(
@@ -66,8 +66,8 @@ class JobDetailsPage extends StatelessWidget {
                           ],
                         ),
                         Text(title,
-                            style: recommendedtitle.copyWith(
-                                fontWeight: FontWeight.w600, fontSize: 30)),
+                            style: GoogleFonts.lato(
+                                fontWeight: FontWeight.w700, fontSize: 30)),
                         const SizedBox(
                           height: 16,
                         ),
@@ -81,7 +81,7 @@ class JobDetailsPage extends StatelessWidget {
                                 child: Padding(
                                   padding: EdgeInsets.all(8.0),
                                   child: Text(
-                                    time ?? 'New',
+                                    time ?? '2 Hours ago',
                                     style: blueText,
                                   ),
                                 )),
@@ -133,7 +133,7 @@ class JobDetailsPage extends StatelessWidget {
                         Row(
                           children: [
                             const Icon(
-                              Icons.payments_rounded,
+                              LineIcons.indianRupeeSign,
                               color: Color(0xFFAEAEAE),
                             ),
                             const SizedBox(width: 8.0),
@@ -144,7 +144,7 @@ class JobDetailsPage extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(
-                          height: 8,
+                          height: 16,
                         ),
                         const Text(
                           'Job Requirements',
@@ -156,7 +156,7 @@ class JobDetailsPage extends StatelessWidget {
                         Row(
                           children: [
                             const Icon(
-                              FontAwesomeIcons.bookReader,
+                              Icons.supervisor_account,
                               color: Color(0xFFAEAEAE),
                             ),
                             const SizedBox(width: 8.0),
@@ -171,11 +171,7 @@ class JobDetailsPage extends StatelessWidget {
                         ),
                         Row(
                           children: [
-                            Container(
-                              height: 20,
-                              width: 30,
-                              child: Image.asset('assets/figma-icon.png'),
-                            ),
+                            const Icon(LineIcons.figma, color: Colors.grey),
                             const SizedBox(width: 8.0),
                             Text('Proficiency in Figma',
                                 style: TextStyle(
@@ -205,13 +201,12 @@ class JobDetailsPage extends StatelessWidget {
                           child: ListView(
                             children: const [
                               Text(
-                                  ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel consectetur massa. Ut imperdiet elementum enim, ut luctus quam euismod eget. Cras posuere risus a ligula placerat molestie. Aenean fermentum euismod commodo. Nulla condimentum, purus nec porttitor semper, lorem ex lacinia nulla, nec congue enim est sit amet quam. Praesent nec dolor eu urna pellentesque lobortis. Fusce at iaculis nisl. Nam laoreet, felis quis ultrices ultricies, erat tortor malesuada diam, sed ultrices felis ipsum a leo. Etiam aliquam venenatis odio, id venenatis ipsum egestas nec. Suspendisse accumsan nisl ac nisl semper interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ultrices enim vel tellus ullamcorper, eu consectetur arcu hendrerit. Proin a lacinia elit, vitae pretium elit. Sed viverra nisl a blandit tincidunt. Maecenas ultrices commodo augue, eu mattis est. Nullam vitae porttitor ligula.'
-                                  'Integer non mi euismod, consectetur est sed, convallis augue. Vestibulum a est sed lorem feugiat sodales. Pellentesque a arcu arcu. Maecenas eget ante eu magna dignissim dignissim. Fusce aliquet velit ac justo tincidunt interdum sed id felis. Morbi fringilla ut ante ac condimentum. Nam sed augue non augue lacinia tempus vel quis dui. Etiam pretium congue feugiat. Fusce volutpat volutpat sem, vitae egestas urna dignissim eget.'
-                                  'Pellentesque vel erat suscipit, pulvinar risus vel, euismod ante. Aliquam cursus neque nibh, non tincidunt nisl molestie quis. Duis nibh ante, elementum sed ligula sit amet, luctus pharetra felis. Proin nec erat eget arcu viverra scelerisque. Nullam lobortis velit eu semper tristique. Maecenas dapibus tortor felis, et sodales tellus consectetur at. Aliquam a scelerisque augue. Vestibulum hendrerit arcu at pellentesque finibus. Donec tristique ex est, ut molestie arcu pulvinar id. Mauris cursus enim a elit condimentum, at varius nunc semper. Nunc lacus sem, lobortis ac molestie id, mollis ut neque. Suspendisse sed orci ut enim sodales egestas ac in velit.'
-                                  'Phasellus augue sapien, faucibus ac tincidunt eu, mattis molestie libero. Sed aliquet molestie ante sit amet lacinia. In at sem nulla. Curabitur ullamcorper nulla lacinia elit cursus, quis egestas justo pretium. Phasellus convallis viverra volutpat. Nam vel posuere nibh, blandit rhoncus odio. Vivamus tempor lacus sed nisl laoreet efficitur. Fusce facilisis, ipsum ut rutrum eleifend, sem neque rutrum velit, sit amet suscipit nibh libero nec ante. Sed a ultricies nulla. In vulputate, lorem id scelerisque vestibulum, lectus elit pulvinar felis, in varius tellus eros quis nibh. Vestibulum sed turpis vel nibh facilisis fermentum. Maecenas ut purus at nibh molestie luctus. Fusce a arcu et arcu posuere molestie. Pellentesque molestie sagittis erat et lobortis. Mauris congue, turpis vel tempus posuere, lectus urna elementum sem, et porttitor arcu elit in diam. Phasellus ut elementum massa.'
-                                  'Nunc varius ultricies felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis nec nisl lorem. Donec maximus, arcu in pulvinar rutrum, dui nibh dictum dolor, vel commodo dui nisl a quam. Maecenas tempor molestie mauris, at lacinia nulla aliquam sed. Integer efficitur metus viverra eros pulvinar tristique. Donec blandit lacus in sapien vehicula porta. Vestibulum vulputate diam at euismod pharetra. Integer convallis gravida arcu, et scelerisque lorem. Aliquam id nisi a purus sagittis imperdiet. Aliquam quis lobortis urna.'
-                                  'Phasellus tincidunt quis purus id fermentum. Donec dapibus pharetra ante at imperdiet. Nullam vulputate enim et ipsum porta molestie. In aliquet sagittis mauris, eu aliquam leo ullamcorper eu. Nulla at lacus metus. Suspendisse aliquam velit ac laoreet maximus. Vivamus elementum imperdiet ipsum id varius. Suspendisse vel nisl sed ex pulvinar venenatis. Sed ullamcorper est et eros elementum iaculis. Maecenas malesuada in magna in condimentum.'
-                                  'Morbi at lectus elit. Pellentesque turpis lectus, mattis non tellus sed, cursus scelerisque turpis. Phasellus rhoncus nibh nec purus sollicitudin volutpat. Suspendisse iaculis blandit ultricies. Aliquam massa neque, porta sit amet risus id, ultricies maximus lacus. Proin auctor lacus est, ornare lacinia ante tempus bibendum. Morbi sodales, dui id bibendum fringilla, risus arcu dictum eros, luctus commodo '),
+                                  ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel consectetur massa. Ut imperdiet elementum enim, ut luctus quam euismod eget. Cras posuere risus a ligula placerat molestie. Aenean fermentum euismod commodo. Nulla condimentum, purus nec porttitor semper, lorem ex lacinia nulla, nec congue enim est sit amet quam.\n Praesent nec dolor eu urna pellentesque lobortis. Fusce at iaculis nisl. Nam laoreet, felis quis ultrices ultricies, erat tortor malesuada diam, sed ultrices felis ipsum a leo. Etiam aliquam venenatis odio, id venenatis ipsum egestas nec. Suspendisse accumsan nisl ac nisl semper interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ultrices enim vel tellus ullamcorper, eu consectetur arcu hendrerit. Proin a lacinia elit, vitae pretium elit.\n'
+                                  'Sed viverra nisl a blandit tincidunt. Maecenas ultrices commodo augue, eu mattis est. Nullam vitae porttitor ligula.\n'
+                                  'Integer non mi euismod, consectetur est sed, convallis augue. Vestibulum a est sed lorem feugiat sodales.\n'
+                                  ' Pellentesque a arcu arcu. Maecenas eget ante eu magna dignissim dignissim. Fusce aliquet velit ac justo tincidunt interdum sed id felis. Morbi fringilla ut ante ac condimentum. Nam sed augue non augue lacinia tempus vel quis dui. Etiam pretium congue feugiat. \n'
+                                  'Fusce volutpat volutpat sem, vitae egestas urna dignissim eget.\n'
+                                  'Pellentesque vel erat suscipit, pulvinar risus vel, euismod ante. Aliquam cursus neque nibh, non tincidunt nisl molestie quis. Duis nibh ante, elementum sed ligula sit amet, luctus pharetra felis. Proin nec erat eget arcu viverra scelerisque. Nullam lobortis velit eu semper tristique.\n Maecenas dapibus tortor felis, et sodales tellus consectetur at.\n'),
                             ],
                           ),
                         ),
