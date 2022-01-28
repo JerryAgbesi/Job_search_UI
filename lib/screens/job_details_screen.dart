@@ -201,11 +201,15 @@ class JobDetailsPage extends StatelessWidget {
                           child: ListView(
                             children: const [
                               Text(
-                                  ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel consectetur massa. Ut imperdiet elementum enim, ut luctus quam euismod eget. Cras posuere risus a ligula placerat molestie. Aenean fermentum euismod commodo. Nulla condimentum, purus nec porttitor semper, lorem ex lacinia nulla, nec congue enim est sit amet quam.\n Praesent nec dolor eu urna pellentesque lobortis. Fusce at iaculis nisl. Nam laoreet, felis quis ultrices ultricies, erat tortor malesuada diam, sed ultrices felis ipsum a leo. Etiam aliquam venenatis odio, id venenatis ipsum egestas nec. Suspendisse accumsan nisl ac nisl semper interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ultrices enim vel tellus ullamcorper, eu consectetur arcu hendrerit. Proin a lacinia elit, vitae pretium elit.\n'
-                                  'Sed viverra nisl a blandit tincidunt. Maecenas ultrices commodo augue, eu mattis est. Nullam vitae porttitor ligula.\n'
+                                  ' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel consectetur massa. Ut imperdiet elementum enim, ut luctus quam euismod eget. Cras posuere risus a ligula placerat molestie. Aenean fermentum euismod commodo. Nulla condimentum, purus nec porttitor semper, lorem ex lacinia nulla, nec congue enim est sit amet quam.\n'
+                                  '\n Praesent nec dolor eu urna pellentesque lobortis. Fusce at iaculis nisl. Nam laoreet, felis quis ultrices ultricies, erat tortor malesuada diam, sed ultrices felis ipsum a leo. Etiam aliquam venenatis odio, id venenatis ipsum egestas nec.'
+                                  ' Suspendisse accumsan nisl ac nisl semper interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ultrices enim vel tellus ullamcorper, eu consectetur arcu hendrerit. Proin a lacinia elit, vitae pretium elit.\n'
+                                  '\nSed viverra nisl a blandit tincidunt. Maecenas ultrices commodo augue, eu mattis est.\n'
+                                  ' Nullam vitae porttitor ligula.'
                                   'Integer non mi euismod, consectetur est sed, convallis augue. Vestibulum a est sed lorem feugiat sodales.\n'
-                                  ' Pellentesque a arcu arcu. Maecenas eget ante eu magna dignissim dignissim. Fusce aliquet velit ac justo tincidunt interdum sed id felis. Morbi fringilla ut ante ac condimentum. Nam sed augue non augue lacinia tempus vel quis dui. Etiam pretium congue feugiat. \n'
-                                  'Fusce volutpat volutpat sem, vitae egestas urna dignissim eget.\n'
+                                  ' Pellentesque a arcu arcu. Maecenas eget ante eu magna dignissim dignissim.\n'
+                                  '\nFusce aliquet velit ac justo tincidunt interdum sed id felis. Morbi fringilla ut ante ac condimentum. Nam sed augue non augue lacinia tempus vel quis dui. Etiam pretium congue feugiat.'
+                                  'Fusce volutpat volutpat sem, vitae egestas urna dignissim eget.'
                                   'Pellentesque vel erat suscipit, pulvinar risus vel, euismod ante. Aliquam cursus neque nibh, non tincidunt nisl molestie quis. Duis nibh ante, elementum sed ligula sit amet, luctus pharetra felis. Proin nec erat eget arcu viverra scelerisque. Nullam lobortis velit eu semper tristique.\n Maecenas dapibus tortor felis, et sodales tellus consectetur at.\n'),
                             ],
                           ),
@@ -217,9 +221,7 @@ class JobDetailsPage extends StatelessWidget {
               ),
             ),
             Container(
-                decoration: const BoxDecoration(
-                    // color: Colors.green,
-                    ),
+                decoration: const BoxDecoration(),
                 alignment: Alignment.bottomCenter,
                 height: 100,
                 width: double.infinity,
