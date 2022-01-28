@@ -4,14 +4,17 @@
 UI implementation of a job searching application I came across on twitter
 
 
+#Art
 
-<img src = "" width= "400px" height= "800px"><img>
-
-
-<img src = "https://github.com/JerryAgbesi/netflix_UI_Clone/blob/main/Screenshots/Screenshot_20211230_131051.jpg" width= "400px" height= "800px"><img>
+<img src = "https://github.com/JerryAgbesi/Job_search_UI/blob/main/screenshots/UI%20challenge.jpg" width= "400px" height= "800px"><img>
 
 
-<img src = "https://github.com/JerryAgbesi/netflix_UI_Clone/blob/main/Screenshots/Screenshot_20211230_131051.jpg" width= "400px" height= "800px"><img>
+<img src = "https://github.com/JerryAgbesi/Job_search_UI/blob/main/screenshots/Screenshot_20220128_014013.jpg" width= "400px" height= "800px"><img>
+
+
+<img src = "https://github.com/JerryAgbesi/Job_search_UI/blob/main/screenshots/Screenshot_20220128_014035.jpg" width= "400px" height= "800px"><img>
+
+<img src = "https://github.com/JerryAgbesi/Job_search_UI/blob/main/screenshots/Screenshot_20220128_022529.jpg" width= "400px" height= "800px"><img>
 
 
 
