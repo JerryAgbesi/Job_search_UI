@@ -6,6 +6,7 @@ UI implementation of a job searching application I came across on twitter
 
 # Art
 <div>
+! [] () 
 <img src = "https://github.com/JerryAgbesi/Job_search_UI/blob/main/screenshots/UI%20challenge.jpg" width= "1400px" height= "800px"><img>
 </div>
 
