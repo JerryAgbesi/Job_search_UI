@@ -1,8 +1,9 @@
 <<<<<<< HEAD
 
 # Job_search_UI
-UI implementation of a job searching application I came across while on twitter
 
+This project is a UI implementation of a job searching application I came across while on Twitter. 
+The entire project was created using Flutter. 
 
 [Twitter Post](https://twitter.com/Urvashik07/status/1483440178761199616?s=19) 
 
